@@ -19,9 +19,21 @@ const Popup = ({ setShow, title, type, image, date, link, description }) => {
                   <p className="text-sm font-mono text-white">fotografie</p>
                 </div>
                 : type == 1 ?
-                <p></p>
+                <div className="bg-sky-300 p-2 rounded-md">
+                  <p className="text-sm font-mono text-white">taal, lectuur</p>
+                </div>
+                : type == 2 ?
+                <div className="bg-lime-300 p-2 rounded-md">
+                  <p className="text-sm font-mono text-white">meteorologie</p>
+                </div>
+                : type == 3 ?
+                <div className="bg-rose-300 p-2 rounded-md">
+                  <p className="text-sm font-mono text-white">programmeren</p>
+                </div>
                 :
-                <p></p>
+                <div className="bg-violet-300 p-2 rounded-md">
+                  <p className="text-sm font-mono text-white">entertainment</p>
+                </div>
               }
             </div>
             <img src={image} className="w-2/3 rounded-xl"/>
