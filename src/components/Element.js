@@ -10,7 +10,7 @@ const Element = ({ title, type, image, date, link , description }) => {
   }
 
   return (
-    <div>
+    <div className="w-fit">
       { type == 0 ? 
         // 0: fotografie
         <div onClick={onClick}
