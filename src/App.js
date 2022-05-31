@@ -1,7 +1,6 @@
 import React, {useState} from "react"
 import Timeline from "./components/Timeline"
 import Element from "./components/Element"
-import Popup from "./components/Popup"
 
 //images
 import github from "./images/github.png"
@@ -54,7 +53,7 @@ function App() {
               </div>
               <div className="flex flex-col w-full items-center">
                 <p className="mb-8 text-4xl font-mono text-gray-700">Inleiding</p>
-                <p className="mb-8 mx-8 font-mono text-gray-500">Welkom bij mijn portfolio van het schooljaar 2021-2022! Deze portfolio is eigenlijk een tijdslijn, met daarop al mijn bronnen uit het afgelopen jaar, zo is de evolutie duidelijk zichtbaar. De bronnen zijn in verschillende categoriën opgedeeld, de legende daarvoor vind je links. Als je op een bron klikt krijg je meer informatie over die bron. Soms kan je de volledige tekst of nog meer info krijgen door op de afbeelding te klikken. Rechts vind je ook nog enkele algemene bronnen. Veel plezier met het ontdekken van mijn portfolio!</p>
+                <p className="mb-8 mx-8 font-mono text-gray-500 text-justify">Welkom bij mijn portfolio van het schooljaar 2021-2022! Deze portfolio is eigenlijk een tijdslijn, met daarop al mijn bronnen uit het afgelopen jaar, zo is de evolutie duidelijk zichtbaar. De bronnen zijn in verschillende categoriën opgedeeld, de legende daarvoor vind je links. Soms overlappen de verschillende thema's wat, ik heb in die gevallen steeds het belangrijkste thema gekozen. Als je op een bron klikt krijg je meer informatie over die bron. Soms kan je de volledige tekst of nog meer info krijgen door op de afbeelding te klikken. Rechts vind je ook nog enkele algemene bronnen. Veel plezier met het ontdekken van mijn portfolio!</p>
               </div>
             </div>
           </div>
@@ -73,8 +72,8 @@ function App() {
           </div>
           <h1 className="text-5xl font-mono font-semibold text-gray-600">Portfolio 2021-2022</h1>
           <div className="flex flex-row">
-            <img onClick={() => setShow(true)} src={info} className="w-12 opacity-60 hover:opacity-100 cursor-pointer" />
-            <img onClick={()=> window.open("https://github.com/Tcumulus/Portfolio", "_blank")} src={github} className="ml-8 mr-12 w-12 opacity-60 hover:opacity-100 cursor-pointer"/>
+            <img onClick={() => setShow(true)} src={info} alt="info" className="w-12 opacity-60 hover:opacity-100 cursor-pointer" />
+            <img onClick={()=> window.open("https://github.com/Tcumulus/Portfolio", "_blank")} src={github} alt="github" className="ml-8 mr-12 w-12 opacity-60 hover:opacity-100 cursor-pointer"/>
           </div>
         </div>
 
@@ -216,7 +215,7 @@ function App() {
               <Element title="Pleidooi" type={1} image={may1} date="mei" link="https://docs.google.com/document/d/1uOicTBvkgKEpilE2hKbD54LPTxGOb95XIy58jLMfgWE/edit?usp=sharing"
               description="Een pleidooi over het accepteren van onveranderbare dingen"/>
               <Element title="Deze site" type={3} image={may3} date="29.05.2022" link=""
-              description="Deze site is gemaakt met React en Tailwind"/>
+              description="Ook deze site heb ik zelf geprogrammeerd met React en Tailwind"/>
             </div>
           </div>
 

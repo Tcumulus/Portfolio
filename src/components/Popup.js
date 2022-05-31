@@ -14,19 +14,19 @@ const Popup = ({ setShow, title, type, image, date, link, description }) => {
           <div className="flex flex-col w-full items-center">
             <div className="flex w-full mb-4 justify-between items-end">
               <p className="ml-12 text-4xl font-mono text-gray-700">{title}</p>
-              { type == 0 ?
+              { type === 0 ?
                 <div className="bg-amber-300 p-2 mr-12 rounded-md">
                   <p className="text-sm font-mono text-white">fotografie</p>
                 </div>
-                : type == 1 ?
+                : type === 1 ?
                 <div className="bg-sky-300 p-2 mr-12 rounded-md">
                   <p className="text-sm font-mono text-white">taal, lectuur</p>
                 </div>
-                : type == 2 ?
+                : type === 2 ?
                 <div className="bg-lime-300 p-2 mr-12 rounded-md">
                   <p className="text-sm font-mono text-white">meteorologie</p>
                 </div>
-                : type == 3 ?
+                : type === 3 ?
                 <div className="bg-rose-300 p-2 mr-12 rounded-md">
                   <p className="text-sm font-mono text-white">programmeren</p>
                 </div>
@@ -38,9 +38,9 @@ const Popup = ({ setShow, title, type, image, date, link, description }) => {
             </div>
 
             { link ?
-              <img onClick={() => window.open(link, "_blank")} src={image} className="h-96 rounded-xl cursor-pointer"/>
+              <img onClick={() => window.open(link, "_blank")} src={image} alt="" className="h-96 rounded-xl cursor-pointer"/>
               :
-              <img src={image} className="h-96 rounded-xl"/>
+              <img src={image} alt="" className="h-96 rounded-xl"/>
             }
 
             <div className="flex flex-col w-2/3 mt-4 mb-8 border border-gray-300 rounded-xl">
@@ -50,7 +50,7 @@ const Popup = ({ setShow, title, type, image, date, link, description }) => {
               </div>
               <div className="flex justify-between">
                 <p className="my-2 ml-4 mr-6 font-mono">Beschrijving</p>
-                <p className="my-2 mx-4 font-mono text-sm">{description}</p>
+                <p className="my-2 mx-4 font-mono text-sm text-justify">{description}</p>
               </div>
               { link ? 
                 <a href={link} target="blank_" className="my-2 mx-4 font-mono text-cyan-800 underline">Bron</a>
