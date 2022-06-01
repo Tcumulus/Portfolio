@@ -82,24 +82,24 @@ function App() {
           <div className="flex flex-col w-1/6 items-center border-r border-gray-200">
             <p className="my-4 text-xl font-mono">Legende</p>
             <div className="flex flex-row w-full items-center justify-between">
-              <div className="w-4 h-4 ml-8 rounded-full bg-amber-300"></div>
-              <p className="mr-8 font-mono text-gray-600">fotografie</p>
+              <div className="w-4 h-4 ml-4 rounded-full bg-amber-300"></div>
+              <p className="mr-4 font-mono text-gray-600">fotografie</p>
             </div>
             <div className="flex flex-row w-full items-center justify-between">
-              <div className="w-4 h-4 ml-8 rounded-full bg-sky-300"></div>
-              <p className="mr-8 font-mono text-gray-600 align-bottom">taal, lectuur</p>
+              <div className="w-4 h-4 ml-4 rounded-full bg-sky-300"></div>
+              <p className="mr-4 font-mono text-gray-600 align-bottom">taal, lectuur</p>
             </div>
             <div className="flex flex-row w-full items-center justify-between">
-              <div className="w-4 h-4 ml-8 rounded-full bg-lime-300"></div>
-              <p className="mr-8 font-mono text-gray-600">meteorologie</p>
+              <div className="w-4 h-4 ml-4 rounded-full bg-lime-300"></div>
+              <p className="mr-4 font-mono text-gray-600">meteorologie</p>
             </div>
             <div className="flex flex-row w-full items-center justify-between">
-              <div className="w-4 h-4 ml-8 rounded-full bg-rose-300"></div>
-              <p className="mr-8 font-mono text-gray-600">programmeren</p>
+              <div className="w-4 h-4 ml-4 rounded-full bg-rose-300"></div>
+              <p className="mr-4 font-mono text-gray-600">programmeren</p>
             </div>
             <div className="flex flex-row w-full items-center justify-between">
-              <div className="w-4 h-4 ml-8 rounded-full bg-violet-300"></div>
-              <p className="mr-8 font-mono text-gray-600">entertainment</p>
+              <div className="w-4 h-4 ml-4 rounded-full bg-violet-300"></div>
+              <p className="mr-4 font-mono text-gray-600">entertainment</p>
             </div>
           </div>
 
